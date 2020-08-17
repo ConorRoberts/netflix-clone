@@ -9,7 +9,13 @@
     padding:0;
 }
 
+a{
+    text-decoration:none;
+    color:white;
+}
+
 html{
+    font-size:62.5%;
     font-family:"Open Sans",sans-serif;
 }
 
@@ -17,6 +23,27 @@ body{
     background-color:#141414;
 }
 
+nav{
+    display:inline-block;
+}
+
+ul{
+    list-style:none;
+}
+
 .logo{
+    font-size: 4rem;
     color:#E50A13;
+    display:inline-block;
+}
+
+.nav-element{
+    display:inline-block;
+    text-align:center;
+    font-size:2rem;
+}
+
+.nav-link{
+    padding:2rem;
+    font-size:2rem;
 }
