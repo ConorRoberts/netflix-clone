@@ -7,10 +7,6 @@
     box-sizing:border-box;
     margin:0;
     padding:0;
-}
-
-a{
-    text-decoration:none;
     color:white;
 }
 
@@ -21,29 +17,66 @@ html{
 
 body{
     background-color:#141414;
+    margin-left:2rem;
 }
 
 nav{
     display:inline-block;
 }
 
-ul{
-    list-style:none;
-}
-
 .logo{
     font-size: 4rem;
     color:#E50A13;
     display:inline-block;
+    margin-right:2.5rem;
 }
 
 .nav-element{
     display:inline-block;
-    text-align:center;
     font-size:2rem;
 }
 
 .nav-link{
+    color:white;
     padding:2rem;
-    font-size:2rem;
+    font-weight:600;
+    font-size:1.5rem;
+    height:100%;
+    text-decoration:none;
+
+    /* TODO: Issue here with transition. Fires incorrectly on page load */
+    transition: color 200ms;
+}
+
+.nav-link:hover{
+    color:rgb(124, 124, 124);
+}
+
+header{
+    position:sticky;
+    vertical-align:middle;
+    display:flex;
+    align-items:center;
+    margin:0.1rem;
+}
+
+/* Movie sections */
+.section-title{
+    font-weight:700;
+    font-size:4rem;
+}
+
+.movie-section{
+    display:flex;
+}
+
+.movie-element{
+    width:25rem;
+    height:15rem;
+    background-color:grey;
+    margin-right:1rem;
+}
+
+.movie-element:hover{
+    scale: height 2;
 }
