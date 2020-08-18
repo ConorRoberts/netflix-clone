@@ -79,21 +79,26 @@ header{
     height:15rem;
     background-color:grey;
     margin-right:1rem;
-    transition:transform 100ms;
+    transition:transform 150ms;
 }
 
 .movie-title{
-    opacity:0;
     color:white;
+    opacity:0;
+    transition: opacity 250ms;
+    position:absolute;
+    bottom:1rem;
+    left:1rem;
 }
 
-@keyframes fadeOpacity{
-    0%{
-        opacity:0;
-    }
-    100%{
-        opacity:1;
-    }
+.movie-image{
+    width:100%;
+    height:100%;
+    transition:filter 150ms;
+}
+
+.movie-element:hover .movie-image{
+    filter:brightness(50%);
 }
 
 .movie-element:hover{
@@ -101,6 +106,5 @@ header{
 }
 
 .movie-element:hover .movie-title{
-    animation-name:fadeOpacity;
-    animation-duration:100ms;
+    opacity:1;
 }

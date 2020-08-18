@@ -7,8 +7,12 @@
 
 
 let dom = {
-    myList: document.querySelector(".my-list")
+    myList: document.querySelector("section")
 };
+
+myList.addEventListener("click",()=>{
+    
+});
 
 
 console.log(dom);
