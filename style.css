@@ -10,6 +10,10 @@
     color:white;
 }
 
+ul{
+    list-style:none;
+}
+
 html{
     font-size:62.5%;
     font-family:"Open Sans",sans-serif;
@@ -75,8 +79,28 @@ header{
     height:15rem;
     background-color:grey;
     margin-right:1rem;
+    transition:transform 100ms;
+}
+
+.movie-title{
+    opacity:0;
+    color:white;
+}
+
+@keyframes fadeOpacity{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
 }
 
 .movie-element:hover{
-    scale: height 2;
+    transform: scale(1.1);
+}
+
+.movie-element:hover .movie-title{
+    animation-name:fadeOpacity;
+    animation-duration:100ms;
 }
