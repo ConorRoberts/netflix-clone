@@ -70,8 +70,9 @@ header{
     font-size:4rem;
 }
 
-.movie-section{
+.movie-list{
     display:flex;
+    align-items:center;
 }
 
 .movie-element{
